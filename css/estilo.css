@@ -1,135 +1,274 @@
-/**{
-    background-color: #abe9cd;
-background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+.grilla-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 2fr;
+  grid-template-areas: "contacto contacto unirse unirse" "contacto contacto unirse unirse"; }
 
+.header h1 .log {
+  color: black; }
 
-footer {
-  background-color: gray;
+.header .container-fluid .navbar-nav {
+  display: flex; }
+
+.conte-index {
+  font-family: sans-serif;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: #fff; }
+  .conte-index figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+    .conte-index figure .razones {
+      position: relative;
+      top: 0;
+      background: rgba(0, 103, 123, 0.7); }
+      .conte-index figure .razones h5 {
+        position: absolute;
+        bottom: 4em;
+        text-shadow: #08f;
+        font-size: 35px;
+        left: 20px; }
+    .conte-index figure img {
+      width: 500px;
+      opacity: 0.6;
+      transition: all 500ms ease-out; }
+
+.footer {
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 2%;
-}
-body {
-  background-color: #abe9cd;
-  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-}
-.cursos img {
-  width: 100px;
-  border-radius: 50%;
-}
-.gente img {
-  width: 200px;
-  height: 200px;
-  border-radius: 70%;
-  position: relative;
-  left: 40%;
-}
-.contacto {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.contacto .contenedor-flex {
-  align-items: flex-start;
-}
-.info-contacto {
-  padding: 15px;
-  padding-top: 0;
-  margin-bottom: 30px;
-}
-.info-contacto .titulo-columna {
-  font-family: "Righteous", cursive;
-  font-weight: 100;
-}
-.info-contacto [class*="icon-"] {
-  font-size: 20px;
-  margin-right: 9px;
-  position: relative;
-  top: 1px;
-}
-.info-contacto .social-icon {
-  justify-content: flex-start;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-.info-contacto .social-icon [class*="icon-"] {
-  color: white;
-  margin-left: 0;
-  margin-right: 15px;
-}
-.nav item {
-  padding: 2%;
-}
-.p{
-    
-}
-.formulario {
-  padding: 10px;
-  padding-top: 0;
-}
-.formulario-label,
-.formulario-input-txt,
-.formulario-textarea {
-  display: flex;
-  width: 35%;
-}
-.formulario-input-txt {
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.formulario-textarea {
-  margin-top: 10px;
-  min-height: 100px;
-  min-width: 100%;
+  color: azure;
   max-width: 100%;
-  max-height: 200px;
-}
-.formulario-btn {
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-ol {
-    background-color: green;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  font-size: 36px;
-}
-.dias {
-  background-color: #eee;
-  font-weight: bold;
-}
-.di{
-    color: yellow;
-}
-.info-contacto .desc-columna {
-  font-size: 14px;
-}
-.log {
-  color: black;
-}
+  justify-content: center; }
+  .footer .logo {
+    text-align: center;
+    padding-right: 15%; }
+    .footer .logo a {
+      text-decoration: none;
+      color: #fff; }
+      .footer .logo a:hover {
+        color: #08f; }
+  .footer .media {
+    display: flex;
+    flex-direction: column; }
+    .footer .media .razon {
+      text-align: center;
+      display: flex;
+      padding-right: 5%;
+      margin-bottom: 2rem;
+      flex-direction: column; }
+  .footer .red-social {
+    margin-right: 5%;
+    color: azure;
+    padding-right: 5%;
+    width: 1%; }
+    .footer .red-social a {
+      color: #fff; }
+      .footer .red-social a:hover {
+        color: #08f; }
 
-.navbar-expand-lg .navbar-collapse {
-  padding-left: 2%;
-}
-.nav-link {
-  padding-left: 2%;
-}
-.btn.formulario-btn {
-  background-color: yellowgreen;
-}
-img.oferta {
-  width: 100%;
-  padding-bottom: 5px;
-}
-img.virtual {
-  width: 100%;
-  padding-bottom: 5px;
-}
-@media screen and (min-width: 480px) {
+.texto-instituto p {
+  margin: 1em; }
+
+.clientes-contenedor h2 {
+  text-align: center; }
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2%; }
+  .cards .card {
+    background-color: #08f;
+    display: flex;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 black(0, 0, 0, 0.6); }
+    .cards .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      display: block; }
+    .cards .card .contenido-texto-card {
+      color: #fff; }
+      .cards .card .contenido-texto-card p {
+        font-weight: 300;
+        padding-top: 5px; }
+
+.cursos {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-rows: 32rem;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+  font-family: sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  border: 1px solid; }
+  .cursos .curso {
+    border: 1px solid #6a6a6a;
+    padding: 1px; }
+    .cursos .curso:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+  .cursos img {
+    width: 100%;
+    height: 210px; }
+  .cursos .contenido {
+    padding: 15px;
+    text-align: center; }
+    .cursos .contenido p {
+      line-height: 1.5;
+      color: #6a6a6a; }
+      .cursos .contenido p a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #2fb4cc;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease; }
+        .cursos .contenido p a:hover {
+          background: #2fb4cc;
+          color: #fff; }
+    .cursos .contenido h4 {
+      font-weight: 400;
+      margin-bottom: 15px; }
+
+.sub-pre {
+  font-size: 2em;
+  border: 2px solid #08f;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 5px; }
+
+.preguntas {
+  display: flex; }
+  .preguntas .parte1 {
+    width: 50vw;
+    margin: .8em; }
+  .preguntas .parte2 {
+    width: 50vw;
+    margin: .8em; }
+  .preguntas .pre {
+    color: #08f;
+    margin-left: 5px; }
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-left: 70px;
+  background-size: cover;
+  min-height: 80vh; }
+  .contacto h1 {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .contacto h3 {
+    padding-left: 15px;
+    margin-bottom: 15px; }
+  .contacto p {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-right: 30px; }
+  .contacto a {
+    padding-left: 20px;
+    font-weight: bold;
+    color: #266302;
+    width: 15rem; }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 80%; }
+    .contacto form .form-floating input {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .contacto form .form-floating input:focus {
+        border: solid 2px darkblue;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
+    .contacto form .form-floating textarea {
+      margin-bottom: 10px;
+      margin-top: 12px; }
+      .contacto form .form-floating textarea:focus {
+        border: solid 2px darkblue;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
+    .contacto form .submit {
+      background-color: white;
+      padding: 5px 22px 5px 22px;
+      margin: 0 auto; }
+      .contacto form .submit:hover {
+        background-color: #f4f810;
+        color: black; }
+
+.unirse {
+  grid-area: unirse;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-size: cover;
+  min-height: 80vh; }
+  .unirse h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    margin: 0 auto; }
+  .unirse form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column; }
+    .unirse form input:focus {
+      border: solid 2px darkblue;
+      outline: none;
+      box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
+  .unirse .submit2 {
+    border-radius: 50px;
+    padding: 8px 15px 8px 15px;
+    font-size: 25px;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: white; }
+    .unirse .submit2:hover {
+      background: #2fb4cc;
+      color: #fff; }
+
+@media (max-width: 480px) {
   .container {
     display: grid;
     grid-template-columns: 1.1fr;
@@ -137,28 +276,23 @@ img.virtual {
     gap: 0px 0px;
     grid-auto-flow: row;
     justify-items: stretch;
-    grid-template-areas:
-      "."
-      "."
-      "."
-      "."
-      "."
-      ".";
-  }
-  .oferta {
-    width: 800px;
-  }
-
+    grid-template-areas: "." "." "." "." "." "."; }
   .info-contacto p {
-    font-size: 12px;
-  }
+    font-size: 12px; }
   .info-contacto {
     height: 440px;
+    border-bottom: none; }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: azure;
+    width: 100vw;
+    justify-content: center; }
+  .media {
+    display: none; } }
 
-    border-bottom: none;
-  }
-}
-@media screen and (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 1.1fr;
@@ -166,33 +300,18 @@ img.virtual {
     gap: 0px 0px;
     grid-auto-flow: row;
     justify-items: stretch;
-    grid-template-areas:
-      "."
-      "."
-      "."
-      "."
-      "."
-      ".";
-  }
-
+    grid-template-areas: "." "." "." "." "." "."; }
   .info-contacto p {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .info-contacto .titulo-columna {
-    font-size: 32px;
-  }
-}
-/*Footer*/
-.logo {
-  text-align: center;
-  padding-right: 20%;
-}
-.razon {
-  text-align: center;
-  display: flex;
-  padding-right: 5%;
-  margin-bottom: 2rem;
-}
-.red-social {
-  margin-right: 20%;
-}
+    font-size: 32px; }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: azure;
+    width: 100vw;
+    justify-content: center; }
+  .media {
+    display: none; } }

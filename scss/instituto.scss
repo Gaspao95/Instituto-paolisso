@@ -1,0 +1,43 @@
+.texto-instituto p {
+  margin: 1em;
+}
+
+.clientes-contenedor h2 {
+  text-align: center;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2%;
+
+  .card {
+    background-color: #08f;
+    display: flex;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 black(0, 0, 0, 0.6);
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .contenido-texto-card {
+      color: #fff;
+
+      p {
+        font-weight: 300;
+        padding-top: 5px;
+      }
+    }
+  }
+}
