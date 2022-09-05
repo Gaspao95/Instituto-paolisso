@@ -45,6 +45,9 @@
       width: 500px;
       opacity: 0.6;
       transition: all 500ms ease-out; }
+      .conte-index figure img:hover img {
+        background: #2fb4cc;
+        color: #fff; }
 
 .footer {
   background-color: black;
@@ -76,7 +79,8 @@
     padding-right: 5%;
     width: 1%; }
     .footer .red-social a {
-      color: #fff; }
+      color: #fff;
+      font-size: 10px; }
       .footer .red-social a:hover {
         color: #08f; }
 
@@ -114,6 +118,9 @@
 
 .cursos {
   padding: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 140px;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -129,10 +136,23 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
-  border: 1px solid; }
+  border: 1px solid;
+  padding-left: 8%; }
   .cursos .curso {
     border: 1px solid #6a6a6a;
     padding: 1px; }
+    .cursos .curso a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      color: #2fb4cc;
+      border: 1px solid #2fb4cc;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+      .cursos .curso a:hover {
+        background: #2fb4cc;
+        color: #fff; }
     .cursos .curso:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%); }

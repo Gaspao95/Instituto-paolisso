@@ -1,5 +1,8 @@
 .cursos {
     padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 140px;
     display: grid;
     justify-items: center;
     justify-content: center;
@@ -16,15 +19,34 @@
     cursor: default;
     transition: all 400ms ease;
     border: 1px solid;
-
+    padding-left: 8%;
+    
 
     .curso {
         border: 1px solid #6a6a6a;
         padding: 1px;
+        
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            color: #2fb4cc;
+            border: 1px solid #2fb4cc;
+            border-radius: 4px;
+            transition: all 400ms ease;
+            
+
+            &:hover {
+                background: #2fb4cc;
+                color: #fff;
+            }
+        }
 
         &:hover {
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             transform: translateY(-3%);
+            
         }
     }
 
@@ -50,6 +72,7 @@
                 border: 1px solid #2fb4cc;
                 border-radius: 4px;
                 transition: all 400ms ease;
+                
 
                 &:hover {
                     background: #2fb4cc;
@@ -57,6 +80,7 @@
                 }
             }
         }
+        
 
         h4 {
             font-weight: 400;
