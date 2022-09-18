@@ -1,11 +1,12 @@
 .texto-instituto p {
   margin: 1em;
 }
-
+.titulo{
+  padding-bottom: 20px;
+}
 .clientes-contenedor h2 {
   text-align: center;
 }
-
 
 .cards {
   display: flex;
@@ -15,6 +16,7 @@
   .card {
     background-color: #08f;
     display: flex;
+    flex-direction: column;
     width: 40%;
     height: 200px;
     align-items: center;
@@ -30,13 +32,16 @@
       border-radius: 50%;
       display: block;
     }
-
+    h4{
+      text-align: center;
+    }
     .contenido-texto-card {
       color: #fff;
 
       p {
         font-weight: 300;
         padding-top: 5px;
+        
       }
     }
   }

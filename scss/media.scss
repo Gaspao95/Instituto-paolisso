@@ -1,77 +1,205 @@
-@media(max-width: 480px) {
-    .container {
-      display: grid;
-      grid-template-columns: 1.1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      justify-items: stretch;
-      grid-template-areas:
-        "."
-        "."
-        "."
-        "."
-        "."
-        ".";
-    }
-    .info-contacto p {
-        font-size: 12px;
-      }
-    
-      .info-contacto {
-        height: 440px;
-    
-        border-bottom: none;
-      }
-    
-      footer {
-        background-color: black;
-        display: flex;
-        flex-wrap: wrap;
-        color: azure;
-        width: 100vw;
-        justify-content: center;
-      }
-      .media {
-        display: none; 
-      }
-}
 @media(max-width: 768px) {
-    .container {
-      display: grid;
-      grid-template-columns: 1.1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      justify-items: stretch;
-      grid-template-areas:
-        "."
-        "."
-        "."
-        "."
-        "."
-        ".";
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+
+  .info-contacto p {
+    font-size: 18px;
+  }
+
+  .info-contacto .titulo-columna {
+    font-size: 32px;
+  }
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 50vh;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: azure;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .media {
+    display: none;
+  }
+
+  .grilla-contacto {
+    grid-template-rows: .1fr 1.5fr 1.2fr .1fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "contacto contacto contacto contacto"
+      "unirse unirse unirse unirse"
+      "footer footer footer footer";
+  }
+
+  .contacto {
+    form {
+      padding-left: 5rem;
     }
-  
-    .info-contacto p {
-      font-size: 18px;
+  }
+
+  /* Se coloco el style ID ya que las clases de Bootstrap no permitian modificar la disposicion */
+  .unirse {
+    form {
+      padding-left: 5rem;
+
+      #distribucion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        div {
+          margin: 10px;
+        }
+      }
+
+      .checkbox {
+        margin-left: -.1em;
+      }
+
+      .submit2 {
+        margin-left: 15rem;
+      }
     }
-  
-    .info-contacto .titulo-columna {
-      font-size: 32px;
+  }
+
+  /* Acomodamos todo el html contacto */
+}
+
+@media(max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+
+  .cards .card {
+    width: 45%;
+    height: 300px;
+
+    h4 {
+      text-align: center;
     }
-  
-    footer {
-      background-color: black;
+
+    p {
+      text-align: center;
+      padding-bottom: 15px;
+
+    }
+  }
+
+  .info-contacto p {
+    font-size: 12px;
+  }
+
+  .info-contacto {
+    height: 440px;
+
+    border-bottom: none;
+  }
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 50vh;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 22%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: azure;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .media {
+    display: none;
+  }
+
+  .grilla-contacto {
+    grid-template-rows: .1fr 2fr 2fr .1fr;
+  }
+
+  .contacto {
+    padding-left: 10px;
+
+    form {
+      padding-left: 1rem;
+
+      .submit {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  .form-control {
+    width: 90vw;
+  }
+
+  .unirse {
+    form {
+      padding-left: 1rem;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      color: azure;
-      width: 100vw;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      .genero {
+        margin-left: -5em;
+      }
+
+      .checkbox {
+        margin-left: 0rem;
+      }
+
+      .submit2 {
+        margin: 0 auto;
+      }
     }
-  
-    .media {
-       display: none;
-    }
+  }
 }

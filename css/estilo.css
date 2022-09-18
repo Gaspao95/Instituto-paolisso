@@ -40,7 +40,10 @@
         bottom: 4em;
         text-shadow: #08f;
         font-size: 35px;
-        left: 20px; }
+        left: 20px;
+        text-decoration: none; }
+        .conte-index figure .razones h5 li {
+          text-decoration: none; }
     .conte-index figure img {
       width: 500px;
       opacity: 0.6;
@@ -48,6 +51,71 @@
       .conte-index figure img:hover img {
         background: #2fb4cc;
         color: #fff; }
+
+.indexH2 {
+  text-align: center;
+  margin-top: 2%; }
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 10%;
+  float: left;
+  margin-left: 19%;
+  margin-bottom: 5%;
+  margin-top: 5%; }
+  .test .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2s; }
+  .test .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000; }
+    .test .front img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .test .front .h5 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+  .test:hover .front {
+    transform: perspective(600px) rotateY(180deg); }
+  .test .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #032336;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000; }
+    .test .back h5 {
+      margin-top: 1em; }
+      .test .back h5 a {
+        text-decoration: none; }
+  .test:hover .back {
+    transform: perspective(600px) rotateY(360deg); }
+
+.h2 {
+  margin-left: 5%;
+  margin-top: 5%; }
 
 .footer {
   background-color: black;
@@ -87,6 +155,9 @@
 .texto-instituto p {
   margin: 1em; }
 
+.titulo {
+  padding-bottom: 20px; }
+
 .clientes-contenedor h2 {
   text-align: center; }
 
@@ -97,6 +168,7 @@
   .cards .card {
     background-color: #08f;
     display: flex;
+    flex-direction: column;
     width: 40%;
     height: 200px;
     align-items: center;
@@ -110,6 +182,8 @@
       border: 3px solid #fff;
       border-radius: 50%;
       display: block; }
+    .cards .card h4 {
+      text-align: center; }
     .cards .card .contenido-texto-card {
       color: #fff; }
       .cards .card .contenido-texto-card p {
@@ -288,30 +362,6 @@
       background: #2fb4cc;
       color: #fff; }
 
-@media (max-width: 480px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1.1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: stretch;
-    grid-template-areas: "." "." "." "." "." "."; }
-  .info-contacto p {
-    font-size: 12px; }
-  .info-contacto {
-    height: 440px;
-    border-bottom: none; }
-  footer {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    color: azure;
-    width: 100vw;
-    justify-content: center; }
-  .media {
-    display: none; } }
-
 @media (max-width: 768px) {
   .container {
     display: grid;
@@ -325,6 +375,19 @@
     font-size: 18px; }
   .info-contacto .titulo-columna {
     font-size: 32px; }
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 5%; }
   footer {
     background-color: black;
     display: flex;
@@ -334,4 +397,90 @@
     width: 100vw;
     justify-content: center; }
   .media {
-    display: none; } }
+    display: none; }
+  .grilla-contacto {
+    grid-template-rows: .1fr 1.5fr 1.2fr .1fr;
+    grid-template-areas: "nav nav nav nav" "contacto contacto contacto contacto" "unirse unirse unirse unirse" "footer footer footer footer"; }
+  .contacto form {
+    padding-left: 5rem; }
+  /* Se coloco el style ID ya que las clases de Bootstrap no permitian modificar la disposicion */
+  .unirse form {
+    padding-left: 5rem; }
+    .unirse form #distribucion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .unirse form #distribucion div {
+        margin: 10px; }
+    .unirse form .checkbox {
+      margin-left: -.1em; }
+    .unirse form .submit2 {
+      margin-left: 15rem; }
+  /* Acomodamos todo el html contacto */ }
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas: "." "." "." "." "." "."; }
+  .cards .card {
+    width: 45%;
+    height: 300px; }
+    .cards .card h4 {
+      text-align: center; }
+    .cards .card p {
+      text-align: center;
+      padding-bottom: 15px; }
+  .info-contacto p {
+    font-size: 12px; }
+  .info-contacto {
+    height: 440px;
+    border-bottom: none; }
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 22%;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: azure;
+    width: 100vw;
+    justify-content: center; }
+  .media {
+    display: none; }
+  .grilla-contacto {
+    grid-template-rows: .1fr 2fr 2fr .1fr; }
+  .contacto {
+    padding-left: 10px; }
+    .contacto form {
+      padding-left: 1rem; }
+      .contacto form .submit {
+        margin-right: 5rem; }
+  .form-control {
+    width: 90vw; }
+  .unirse form {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; }
+    .unirse form .genero {
+      margin-left: -5em; }
+    .unirse form .checkbox {
+      margin-left: 0rem; }
+    .unirse form .submit2 {
+      margin: 0 auto; } }

@@ -13,6 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>+Idiomas</title>
 </head>
 
@@ -58,36 +59,47 @@
             style="stroke: none; fill: #08f;"></path>
         </svg></div>
     </div>
+    <h2 class="indexH2 wow animate__animated animate__backInLeft">Ten encuenta que:</h2>
+    <div class="test">
+      <div class="face front">
+      <img src="/imagenes/test3.jpg.jpg" alt=""> 
+    </div>
+    <div class="face back">
+      <h5>Podes hacer un examen de nivelacion! Solo tenes que mandarnos un mensaje en <a class="li" href="/html/contacto.html">Contacto</a> y poner la palabra clave: "Nivelacion" seguido de tu nombre y apellido y a la brevedad recibiras un mensaje! <br> Te esperamos! </h5>
+    </div>
+    </div>
+    </div>
+    <div class="test">
+      <div class="face front">
+      <img src="/imagenes/libro.jpg.jpg" alt=""> 
+    </div>
+    <div class="face back">
+      <h5>Estamos para ofrecerte una excelente atención, cualquier duda que tengas no dudes en preguntarnos. <br> <br> Tus preguntas no molestan, al contrario, nos ayuda a mejorar la claridad y necesidades de nuestros clientes. <br> <br> Te esperamos!  </h5>
+    </div>
+    </div>
+    </div>
+    
     <div class="conte-index">
-      <h2>Razones para aprender:</h2>
-      <figure>
-        <img src="" alt="">
-        <img class="img-index" src="./imagenes/instituto.jpg.jpg">
-        <div class="razones">
-          <h5>Abre tus ventanas hacia nuevas oportunidades laborales</h5>
-        </div>
-      </figure>
-      <figure>
-        <img class="img-index" src="./imagenes/instituto.jpg">
-        <div class="razones">
-          <h5>Aprende ese idioma que tanto querias!</h5>
-        </div>
-        <figure>
-        </figure>
-        <img class="img-index" src="./imagenes/pc.jpg.jpg">
-        <div class="razones">
-          <h5>Viaja por el mundo y utiliza tus conocimientos adquiridos</h5>
-        </div>
+      <h2 class="wow animate__animated animate__backInLeft">Razones para aprender:</h2>
+    <div class="card mb-3">
+      <img src="/imagenes/instituto.jpg" class="card-img-top " alt="...">
+      <div class="card-body bg-primary">
+        <h5 class="card-title">Abre tus ventanas hacia nuevas oportunidades laborales</h5>
+        <p class="card-text">Crea tu camino profesional con un idioma aprendido. No tengas miedo, anímate!</p>
+        
+      </div>
     </div>
-    </figure>
+    <div class="card">
+      <div class="card-body bg-primary">
+        <h5 class="card-title">Viaja por el mundo y utiliza tus conocimientos adquiridos</h5>
+        <p class="card-text">Ya sea que viajes para conocer,trabajar o vivir en otro país.Estas a un click de lograrlo!</p>
+        
+      </div>
+      <img src="imagenes/pc.jpg.jpg" class="card-img-bottom" alt="...">
     </div>
-    <div>
-      <h3>Segunda Inscripcion en Junio: 8,9 y 10. De 10 a 20hs</h3>
-
-
     </div>
-
-    </div>
+    
+    <h3 class="wow animate__animated animate__backInLeft">Segunda Inscripcion en Junio: 8,9 y 10. De 10 a 20hs</h3>
   </main>
   <footer class="footer">
     <div class="logo">
@@ -137,7 +149,7 @@
       </p>
     </div>
     <div class="red-social">
-      <h5>Contactanos </h5>
+      <h5>Contacto</h5>
       <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
           width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
           <path
@@ -151,6 +163,11 @@
     </div>
   </footer>
   </div>
+  <!-- script de wow -->
+  <script src="./js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
